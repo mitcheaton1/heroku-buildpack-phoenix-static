@@ -176,14 +176,28 @@ install_npm_deps() {
   pwd
   pwd
   pwd
- chmod 777 ../../../deps/phoenix/*
- chmod 777 ../../../deps/phoenix_html/*
- chmod 777 ../../../deps/phoenix_live_view/*
+
+
+
+  # npm install 
+  # cd assets
+  # rm -f phoenix phoenix_html phoenix_live_view
+  # ln -s ../../../../deps/phoenix_html . 
+  # ln -s ../../../../deps/phoenix . 
+  # ln -s ../../../../deps/phoenix_live_view .
+  # npm install 
+
+
 
   npm prune | indent
   npm install --quiet --unsafe-perm --userconfig $build_dir/npmrc 2>&1 | indent
   npm rebuild 2>&1 | indent
   npm --unsafe-perm prune 2>&1 | indent
+ 
+  ls
+  
+
+
 }
 
 install_yarn_deps() {
