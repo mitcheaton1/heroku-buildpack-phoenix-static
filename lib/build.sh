@@ -176,9 +176,9 @@ install_npm_deps() {
   pwd
   pwd
   pwd
- chmod 777 ../../../deps/phoenix
- chmod 777 ../../../deps/phoenix_html
- chmod 777 ../../../deps/phoenix_live_view
+ chmod 777 ../../../deps/phoenix/*
+ chmod 777 ../../../deps/phoenix_html/*
+ chmod 777 ../../../deps/phoenix_live_view/*
 
   npm prune | indent
   npm install --quiet --unsafe-perm --userconfig $build_dir/npmrc 2>&1 | indent
