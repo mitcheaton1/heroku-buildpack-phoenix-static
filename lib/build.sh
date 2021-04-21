@@ -6,7 +6,7 @@ cleanup_cache() {
     rm -rf $cache_dir/node-version
     rm -rf $cache_dir/phoenix-static
     rm -rf $cache_dir/yarn-cache
-    rm -rf $cache_dir/node_modules
+    rm -rf $cache_dir/nodze_modules
     cleanup_old_node
   fi
 }
@@ -116,7 +116,22 @@ install_yarn() {
 
 install_and_cache_deps() {
   cd $assets_dir
-
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
+  pwd
   if [ -d $cache_dir/node_modules ]; then
     info "Loading node modules from cache"
     mkdir node_modules
